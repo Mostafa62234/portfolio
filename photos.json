@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "id": "smart-wheelchair",
+      "images": ["assets/images/wheelchair-3d.png"],
+      "github": "https://github.com/Mostafa62234/smart-wheelchair",
+      "download": ""
+    },
+    {
+      "id": "playverse",
+      "images": ["assets/images/playverse-logo.png"],
+      "github": "https://github.com/Mostafa62234/game-haven-hub",
+      "download": ""
+    },
+    {
+      "id": "nordle",
+      "images": ["assets/images/nordle-screen1.png", "assets/images/nordle-screen2.png", "assets/images/nordle-screen3.png"],
+      "github": "https://github.com/Mostafa62234/nordle",
+      "download": ""
+    },
+    {
+      "id": "earthquake-predictor",
+      "images": ["assets/images/vibe-coded1.png", "assets/images/vibe-coded2.png"],
+      "github": "https://github.com/Mostafa62234/earthquake-predictor",
+      "download": ""
+    },
+    {
+      "id": "robotic-arm",
+      "images": ["assets/images/arm-robot.jpeg"],
+      "github": "https://github.com/Mostafa62234/robotic-arm",
+      "download": ""
+    },
+    {
+      "id": "3d-art",
+      "images": ["assets/images/blender-temple.png", "assets/images/blender-robot.png", "assets/images/blender-villager.png"],
+      "github": "",
+      "download": ""
+    },
+    {
+      "id": "logo-design",
+      "images": ["assets/images/logo-nordle.png", "assets/images/logo-gameverse.png", "assets/images/logo-lol.png"],
+      "github": "",
+      "download": ""
+    }
+  ]
+}
