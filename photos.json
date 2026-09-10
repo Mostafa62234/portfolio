@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": "smart-wheelchair",
-      "images": ["assets/images/wheelchair-3d.png"],
+      "images": ["assets/images/wheelchair-3d.png", "assets/images/wheelchair-circuit.png"],
       "github": "https://github.com/Mostafa62234/smart-wheelchair",
       "download": ""
     },
@@ -14,19 +14,19 @@
     },
     {
       "id": "nordle",
-      "images": ["assets/images/nordle-screen1.png", "assets/images/nordle-screen2.png", "assets/images/nordle-screen3.png"],
+      "images": ["assets/images/nordle-real-1.png", "assets/images/nordle-real-2.png", "assets/images/nordle-real-3.png", "assets/images/nordle-real-4.png"],
       "github": "https://github.com/Mostafa62234/nordle",
       "download": ""
     },
     {
       "id": "earthquake-predictor",
-      "images": ["assets/images/vibe-coded1.png", "assets/images/vibe-coded2.png"],
+      "images": [],
       "github": "https://github.com/Mostafa62234/earthquake-predictor",
       "download": ""
     },
     {
       "id": "robotic-arm",
-      "images": ["assets/images/arm-robot.jpeg"],
+      "images": ["assets/images/arm-robot.png"],
       "github": "https://github.com/Mostafa62234/robotic-arm",
       "download": ""
     },
