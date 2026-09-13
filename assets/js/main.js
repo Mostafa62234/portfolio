@@ -158,11 +158,25 @@
         const form = document.getElementById('contactForm');
         if (!form) return;
 
+        const CONTACT_ENDPOINT = 'https://formsubmit.co/ajax/jeffs9899922@gmail.com';
+
+        const status = document.createElement('p');
+        status.className = 'form-status';
+        status.hidden = true;
+        form.insertAdjacentElement('afterend', status);
+
+        const showStatus = (text, ok) => {
+            status.textContent = text;
+            status.hidden = false;
+            status.classList.toggle('form-status--error', !ok);
+            status.classList.toggle('form-status--success', ok);
+        };
+
         const sanitize = (value) => {
             return value.replace(/<[^>]*>/g, '').trim();
         };
 
-        form.addEventListener('submit', (e) => {
+        form.addEventListener('submit', async (e) => {
             e.preventDefault();
 
             const name = sanitize(form.querySelector('[name="name"]').value);
@@ -170,23 +184,54 @@
             const message = sanitize(form.querySelector('[name="message"]').value);
 
             if (!name || !email || !message) {
-                alert('Please fill in all fields.');
+                showStatus('Please fill in all fields.', false);
                 return;
             }
 
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
-                alert('Please enter a valid email address.');
+                showStatus('Please enter a valid email address.', false);
                 return;
             }
 
             if (message.length > 2000) {
-                alert('Message is too long. Please keep it under 2000 characters.');
+                showStatus('Message is too long. Please keep it under 2000 characters.', false);
                 return;
             }
 
-            form.reset();
-            alert('Message sent! I will get back to you soon.');
+            const btn = form.querySelector('button[type="submit"]');
+            const originalText = btn.textContent;
+            btn.disabled = true;
+            btn.textContent = 'Sending…';
+            showStatus('Sending your message…', true);
+
+            try {
+                const res = await fetch(CONTACT_ENDPOINT, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                    body: JSON.stringify({
+                        name,
+                        email,
+                        message,
+                        _subject: `Portfolio contact from ${name}`,
+                        _template: 'table',
+                        _captcha: 'false'
+                    })
+                });
+                const data = await res.json();
+
+                if (res.ok && data && data.success === 'true') {
+                    form.reset();
+                    showStatus('Message sent! I will get back to you soon.', true);
+                } else {
+                    showStatus('Something went wrong. Please try again or email me directly.', false);
+                }
+            } catch (err) {
+                showStatus('Network error — please try again.', false);
+            } finally {
+                btn.disabled = false;
+                btn.textContent = originalText;
+            }
         });
     };
 
