@@ -78,6 +78,18 @@
         }, { passive: true });
     };
 
+    const initProjectCards = () => {
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('click', (e) => {
+                if (e.target.closest('a')) return;
+                const id = card.dataset.projectId;
+                if (id) {
+                    window.location.href = `project.html?id=${id}`;
+                }
+            });
+        });
+    };
+
     const loadPhotosConfig = async () => {
         try {
             const res = await fetch('photos.json');
@@ -206,6 +218,7 @@
         initScrollReveal();
         initHero();
         initContactForm();
+        initProjectCards();
         setTimeout(initTypeEffect, 300);
 
         const config = await loadPhotosConfig();

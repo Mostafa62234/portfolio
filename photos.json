@@ -2,45 +2,80 @@
   "projects": [
     {
       "id": "smart-wheelchair",
+      "title": "Smart Wheelchair",
+      "category": "hardware",
+      "tags": ["KiCad", "Arduino", "Python", "AI", "3D Modeling"],
       "images": ["assets/images/wheelchair-3d.png", "assets/images/wheelchair-circuit.png"],
       "github": "https://github.com/Mostafa62234/smart-wheelchair",
-      "download": ""
+      "download": "",
+      "portfolioDesc": "An advanced autonomous robotic wheelchair system designed to assist individuals with mobility challenges. Integrates real-time mapping, obstacle avoidance, and multi-modal control (Voice, Mobile App, and Manual) into a reliable and modular architecture.",
+      "overview": "The Smart Wheelchair is an autonomous assistive mobility system that helps individuals with mobility challenges move safely and independently. It combines real-time mapping and obstacle avoidance with multi-modal control so the user can drive it by voice, from a mobile app, or manually.\n\nThe platform is built on a modular architecture spanning 3D-modeled parts, custom PCB design, and embedded firmware. Every subsystem — from the sensor suite to the drive controller — is designed to be reliable, extensible, and easy to maintain."
     },
     {
       "id": "playverse",
+      "title": "PlayVerse",
+      "category": "web",
+      "tags": ["React", "Electron", "Supabase", "TanStack", "Radix UI"],
       "images": ["assets/images/playverse-logo.png"],
       "github": "https://github.com/Mostafa62234/game-haven-hub",
-      "download": ""
+      "download": "",
+      "portfolioDesc": "Cross-platform gaming hub with Electron desktop app, Supabase backend, TanStack Router, and Radix UI. Deployed on Cloudflare with Vite.",
+      "overview": "PlayVerse is a cross-platform gaming hub that brings multiple games together behind one playable launcher. The desktop experience is powered by Electron, with a Supabase backend handling accounts and game state.\n\nThe frontend uses TanStack Router for clean, typed navigation and Radix UI for an accessible component layer. Built with Vite and deployed on Cloudflare, it is designed to scale as new games are added to the ecosystem."
     },
     {
       "id": "nordle",
+      "title": "Nordle",
+      "category": "web",
+      "tags": ["React", "Node.js", "WebSocket", "AI"],
       "images": ["assets/images/nordle-real-1.png", "assets/images/nordle-real-2.png", "assets/images/nordle-real-3.png", "assets/images/nordle-real-4.png"],
       "github": "https://github.com/Mostafa62234/nordle",
-      "download": ""
+      "download": "",
+      "portfolioDesc": "Full-stack multiplayer word game with real-time WebSocket communication, admin dashboard, and AI-assisted development workflow.",
+      "overview": "Nordle is a real-time multiplayer guessing game where players race to decode a secret digit sequence. Matches happen live over WebSocket, with matchmaking across four difficulty levels, a friends system for challenges, and a global leaderboard.\n\nThe stack is a React and Vite client talking to a Node.js Express and Socket.IO server backed by PostgreSQL. The whole project was developed with an AI-assisted workflow, from architecture to deployment."
     },
     {
       "id": "earthquake-predictor",
+      "title": "AI Earthquake Predictor",
+      "category": "ai",
+      "tags": ["Python", "ML", "Classification"],
       "images": [],
       "github": "https://github.com/Mostafa62234/earthquake-predictor",
-      "download": ""
+      "download": "",
+      "portfolioDesc": "Machine learning classification tree that predicts earthquake severity levels. Built with Python scikit-learn, featuring data visualization and model evaluation.",
+      "overview": "The AI Earthquake Predictor applies a classification tree to earthquake data to predict severity levels. Built in Python with scikit-learn, the model is trained on real seismic attributes and evaluated with standard classification metrics.\n\nThe project includes data loading and cleaning, model training, evaluation, and a packaged desktop executable, showing the full pipeline from raw data to a shippable tool."
     },
     {
       "id": "robotic-arm",
+      "title": "Robotic Arm",
+      "category": "hardware",
+      "tags": ["Arduino", "Robotics", "Embedded"],
       "images": ["assets/images/arm-robot.png"],
       "github": "https://github.com/Mostafa62234/robotic-arm",
-      "download": ""
+      "download": "",
+      "portfolioDesc": "Arduino-controlled robotic arm with multiple degrees of freedom. Custom servo control and kinematics implementation.",
+      "overview": "The Robotic Arm is an Arduino-controlled manipulator with multiple degrees of freedom. It demonstrates custom servo control and a hand-written kinematics implementation that translates target positions into joint angles.\n\nThe project spans embedded C++ firmware, the physical mechanical build, and the control logic that ties them together — a complete from-scratch robotics exercise."
     },
     {
       "id": "3d-art",
+      "title": "3D Art Collection",
+      "category": "3d",
+      "tags": ["Blender", "3D Modeling", "Rendering"],
       "images": ["assets/images/blender-temple.png", "assets/images/blender-robot.png", "assets/images/blender-villager.png"],
       "github": "",
-      "download": ""
+      "download": "",
+      "portfolioDesc": "Character sculpts, environment renders, and product visualization. From stylized villager characters to detailed temple environments.",
+      "overview": "A growing collection of 3D work created in Blender, covering character sculpts, environment scenes, and product-style renders. Highlights include stylized villager characters, a detailed temple environment, and robot debris scenes explored at different lighting moods.\n\nEach piece goes through modeling, sculpting, material work, and final render, building toward a consistent artistic style."
     },
     {
       "id": "logo-design",
+      "title": "Brand & Logo Design",
+      "category": "design",
+      "tags": ["Graphic Design", "Branding", "Logos"],
       "images": ["assets/images/logo-nordle.png", "assets/images/logo-gameverse.png", "assets/images/logo-lol.png"],
       "github": "",
-      "download": ""
+      "download": "",
+      "portfolioDesc": "Visual identity design for tech brands and gaming communities. Logo systems, typography, and brand guidelines.",
+      "overview": "Brand identity work focused on tech products and gaming communities. The collection includes the Nordle app mark, the PlayVerse / GameVerse brand logo, and logo concepts for community projects.\n\nEvery identity is crafted around a clear concept, tested at different sizes, and delivered as a clean, reusable logo system."
     }
   ]
 }
