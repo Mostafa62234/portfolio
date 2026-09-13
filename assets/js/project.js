@@ -21,12 +21,40 @@
         if (!files || files.length === 0) {
             return '<div class="project-detail__empty">No files found.</div>';
         }
-        return files.map(f => `
-            <figure class="project-detail__figure">
-                <img src="${f.src}" alt="${f.name}" loading="lazy">
-                <figcaption class="project-detail__filename">${f.name}</figcaption>
-            </figure>
-        `).join('');
+        return files.map(f => {
+            const modelViewer = f.model
+                ? `<model-viewer src="${f.model}" alt="${f.name}" camera-controls auto-rotate shadow-intensity="1" loading="lazy" class="project-detail__model" hidden></model-viewer>
+                   <button type="button" class="project-detail__toggle" data-model-toggle>View in 3D</button>`
+                : '';
+            return `
+                <figure class="project-detail__figure"${f.model ? ' data-has-model="true"' : ''}>
+                    <img src="${f.src}" alt="${f.name}" loading="lazy" class="project-detail__image">
+                    ${modelViewer}
+                    <figcaption class="project-detail__filename">${f.name}</figcaption>
+                </figure>
+            `;
+        }).join('');
+    };
+
+    const initModelToggles = () => {
+        document.querySelectorAll('[data-model-toggle]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const figure = btn.closest('.project-detail__figure');
+                const image = figure.querySelector('.project-detail__image');
+                const viewer = figure.querySelector('.project-detail__model');
+                const showing3D = viewer && !viewer.hidden;
+
+                if (showing3D) {
+                    viewer.hidden = true;
+                    image.style.display = '';
+                    btn.textContent = 'View in 3D';
+                } else if (viewer) {
+                    image.style.display = 'none';
+                    viewer.hidden = false;
+                    btn.textContent = 'View in 2D';
+                }
+            });
+        });
     };
 
     const renderNotFound = () => `
@@ -81,6 +109,7 @@
             const project = (data.projects || []).find(p => p.id === projectId);
             container.innerHTML = project ? renderProject(project) : renderNotFound();
             document.title = project ? `${project.title} | Portfolio` : 'Project | Portfolio';
+            initModelToggles();
         } catch (err) {
             container.innerHTML = `
                 <div class="project-detail__notfound">
