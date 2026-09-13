@@ -260,6 +260,10 @@ img {
     display: block;
 }
 
+.hero-title .text-gradient {
+    display: inline;
+}
+
 .hero-sub {
     font-size: 1.2rem;
     color: var(--text-muted);
