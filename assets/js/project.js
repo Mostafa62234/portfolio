@@ -17,6 +17,18 @@
         return images.map(src => `<img src="${src}" alt="Project screenshot" loading="lazy">`).join('');
     };
 
+    const renderFileGallery = (files) => {
+        if (!files || files.length === 0) {
+            return '<div class="project-detail__empty">No files found.</div>';
+        }
+        return files.map(f => `
+            <figure class="project-detail__figure">
+                <img src="${f.src}" alt="${f.name}" loading="lazy">
+                <figcaption class="project-detail__filename">${f.name}</figcaption>
+            </figure>
+        `).join('');
+    };
+
     const renderNotFound = () => `
         <div class="project-detail__notfound">
             <h1 class="project-detail__title">Project not found</h1>
@@ -47,7 +59,7 @@
                     <p class="project-detail__desc">${project.portfolioDesc || ''}</p>
                 </header>
                 <section class="project-detail__gallery">
-                    ${renderImages(project.images)}
+                    ${project.fileGallery ? renderFileGallery(project.fileGallery) : renderImages(project.images)}
                 </section>
                 <section class="project-detail__info">
                     ${overview}

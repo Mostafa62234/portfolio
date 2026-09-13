@@ -763,6 +763,37 @@ img {
     border-radius: var(--radius);
 }
 
+.project-detail__figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--bg-alt);
+}
+
+.project-detail__figure img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 0;
+    border: none;
+    flex: 1;
+}
+
+.project-detail__filename {
+    padding: 10px 14px;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
 .project-detail__info p {
     color: var(--text-muted);
     margin-bottom: 18px;

@@ -64,7 +64,26 @@
       "github": "",
       "download": "",
       "portfolioDesc": "Character sculpts, environment renders, and product visualization. From stylized villager characters to detailed temple environments.",
-      "overview": "A growing collection of 3D work created in Blender, covering character sculpts, environment scenes, and product-style renders. Highlights include stylized villager characters, a detailed temple environment, and robot debris scenes explored at different lighting moods.\n\nEach piece goes through modeling, sculpting, material work, and final render, building toward a consistent artistic style."
+      "overview": "A growing collection of 3D work created in Blender, covering character sculpts, environment scenes, and product-style renders. Highlights include stylized villager characters, a detailed temple environment, and robot debris scenes explored at different lighting moods.\n\nEach piece goes through modeling, sculpting, material work, and final render, building toward a consistent artistic style.",
+      "fileGallery": [
+        {"src": "assets/images/blender/face sculp render_1.jpeg", "name": "face sculp render_1.jpeg"},
+        {"src": "assets/images/blender/face_sculpt_render_2.jpeg", "name": "face_sculpt_render_2.jpeg"},
+        {"src": "assets/images/blender/face_sculpt_render_3.jpeg", "name": "face_sculpt_render_3.jpeg"},
+        {"src": "assets/images/blender/face_sculpt_render_4.jpeg", "name": "face_sculpt_render_4.jpeg"},
+        {"src": "assets/images/blender/knife render.jpeg", "name": "knife render.jpeg"},
+        {"src": "assets/images/blender/knife render_2.jpeg", "name": "knife render_2.jpeg"},
+        {"src": "assets/images/blender/lamp.jpeg", "name": "lamp.jpeg"},
+        {"src": "assets/images/blender/mirror_render.jpeg", "name": "mirror_render.jpeg"},
+        {"src": "assets/images/blender/older villager sculpt.png", "name": "older villager sculpt.png"},
+        {"src": "assets/images/blender/older villager sculpt_2.png", "name": "older villager sculpt_2.png"},
+        {"src": "assets/images/blender/realistic villager.png", "name": "realistic villager.png"},
+        {"src": "assets/images/blender/realistic villager2.png", "name": "realistic villager2.png"},
+        {"src": "assets/images/blender/realistic villager3.png", "name": "realistic villager3.png"},
+        {"src": "assets/images/blender/robot debri.png", "name": "robot debri.png"},
+        {"src": "assets/images/blender/robot debri_dawn.png", "name": "robot debri_dawn.png"},
+        {"src": "assets/images/blender/robot debri_sunset.png", "name": "robot debri_sunset.png"},
+        {"src": "assets/images/blender/temple render.png", "name": "temple render.png"}
+      ]
     },
     {
       "id": "logo-design",
@@ -75,7 +94,18 @@
       "github": "",
       "download": "",
       "portfolioDesc": "Visual identity design for tech brands and gaming communities. Logo systems, typography, and brand guidelines.",
-      "overview": "Brand identity work focused on tech products and gaming communities. The collection includes the Nordle app mark, the PlayVerse / GameVerse brand logo, and logo concepts for community projects.\n\nEvery identity is crafted around a clear concept, tested at different sizes, and delivered as a clean, reusable logo system."
+      "overview": "Brand identity work focused on tech products and gaming communities. The collection includes the Nordle app mark, the PlayVerse / GameVerse brand logo, and logo concepts for community projects.\n\nEvery identity is crafted around a clear concept, tested at different sizes, and delivered as a clean, reusable logo system.",
+      "fileGallery": [
+        {"src": "assets/images/design/_مخطط دون اسم_.drawio (1).png", "name": "_مخطط دون اسم_.drawio (1).png"},
+        {"src": "assets/images/design/4.png", "name": "4.png"},
+        {"src": "assets/images/design/gameVerseLogo.png", "name": "gameVerseLogo.png"},
+        {"src": "assets/images/design/lol.png", "name": "lol.png"},
+        {"src": "assets/images/design/nordle logo.png", "name": "nordle logo.png"},
+        {"src": "assets/images/design/Tier 1.png", "name": "Tier 1.png"},
+        {"src": "assets/images/design/Tier 3.png", "name": "Tier 3.png"},
+        {"src": "assets/images/design/Tier 4.png", "name": "Tier 4.png"},
+        {"src": "assets/images/design/Tier 5.png", "name": "Tier 5.png"}
+      ]
     }
   ]
 }
